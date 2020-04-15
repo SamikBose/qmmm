@@ -1,8 +1,9 @@
 import math
 
-Rcutwater_sq = 400
-Rcution_sq = 900
-
+#The cutoff distances of water and ions (should be modified as per the choice of the user).
+#The distance is measured from a central atom of the QM region (not necessarily COM).
+Rcutwater_sq = 400 #all water molecules within 20 angstrom of the QM region are incorporated in the MM charges of QMMM calculation.
+Rcution_sq = 900   #all ions (NA and Cl) within 30 angstrom of the QM region are incorporated in the MM charges QMMM calculation.
 
 # Open the input file
 fin = open("em_topology_structure.txt","r")
